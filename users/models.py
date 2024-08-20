@@ -7,4 +7,4 @@ class User(AbstractUser):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     birthdate = models.DateField(null=True, blank=True, default=None)
-    is_employee = models.BooleanField(default=False) #employees devem ter superuser como true tbm
+    is_employee = models.BooleanField(default=False)
